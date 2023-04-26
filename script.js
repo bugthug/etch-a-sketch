@@ -1,6 +1,7 @@
 triggerPrompt()
 function triggerPrompt() {
-    const gridSize = prompt('What is your desired grid size?');
+    const gridSize = prompt('What is your desired grid size? (Less than 100)');
+    if (gridSize > 100) throw new Error('User entered too high number')
     document.querySelector('.container').innerHTML = '';
     createGrid(gridSize);
 }
