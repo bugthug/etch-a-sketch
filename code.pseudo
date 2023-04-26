@@ -1,0 +1,14 @@
+function createGrid(int gridSize) {
+    loop gridSize times:
+        create new div, name gridRow, 
+        add class 'grid-row'
+        loop gridSize times:
+            add event listener when hover, paint red
+            create new div, name gridRowCell
+            add class 'grid-cell'
+            add gridRowCell to gridRow
+        add gridRow to document   
+}
+
+
+
