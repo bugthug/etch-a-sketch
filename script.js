@@ -1,4 +1,9 @@
-createGrid(40);
+function triggerPrompt() {
+    const gridSize = prompt('What is your desired grid size?');
+    document.querySelector('.container').innerHTML = '';
+    createGrid(gridSize);
+}
+
 
 function createGrid(gridSize) {
     const container = document.querySelector('.container');
