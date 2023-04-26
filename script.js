@@ -1,3 +1,4 @@
+triggerPrompt()
 function triggerPrompt() {
     const gridSize = prompt('What is your desired grid size?');
     document.querySelector('.container').innerHTML = '';
